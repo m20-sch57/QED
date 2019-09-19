@@ -1,0 +1,3 @@
+[submodule "deflib"]
+	path = deflib
+	url = https://github.com/lounres/deflib.git
