@@ -1,10 +1,10 @@
-from QED.QED3 import vec_a
+from deflib.QED import B_table
 
 with open("QED_y.txt", 'w', encoding='utf-8') as outfile:
     y = int(input())
-    A = vec_a(1, 2 * y - 1)[0]
+    A = B_table({(y - 1, y - 1)})
 
-    Y = [A[t][y - t - 1] for t in range(y)]
+    Y = [A[t, y - t - 1] for t in range(y)]
 
     L = 0
     L_x = 0

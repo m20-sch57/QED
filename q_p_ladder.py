@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
-from deflib.QED.BQ import Q_set
+from deflib.QED import Q_set
 
 d, L = map(int, input().split())
 

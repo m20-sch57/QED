@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
-from deflib.QED.BQ import Q_set
+from deflib.QED import Q_set
 
 d, L = map(int, input().split())
 d_len = len(str(d))
@@ -14,4 +14,3 @@ plt.ylabel('Q(i + a, i + a)')
 plt.grid(True)
 plt.savefig("Graphics\\plot_Q(i+a,i+a).png")
 plt.show()
-
